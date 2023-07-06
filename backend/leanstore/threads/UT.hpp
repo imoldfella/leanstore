@@ -8,7 +8,7 @@
 #include <emmintrin.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <libaio.h>
+#include "libaio.h"
 #include <linux/futex.h>
 #include <pthread.h>
 #include <signal.h>

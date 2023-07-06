@@ -52,6 +52,8 @@ ENDIF()
 # ---------------------------------------------------------------------------
 target_include_directories(leanstore PUBLIC ${SHARED_INCLUDE_DIRECTORY})
 target_include_directories(leanstore PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(leanstore PRIVATE leanstore/port) 
+
 # ---------------------------------------------------------------------------
 set(LEANSTORE_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR})
 set_property(TARGET leanstore APPEND PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${LEANSTORE_INCLUDE_DIR})
